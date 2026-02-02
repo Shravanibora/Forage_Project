@@ -1,0 +1,14 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Say hello
+        run: echo "Hello, Shravani! This is your first workflow."
